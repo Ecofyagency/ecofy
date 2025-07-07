@@ -6,26 +6,28 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* About */}
           <div>
             <h2 className="text-2xl font-bold text-green-500 mb-4">Ecofy Agency</h2>
-            <p className="text-gray-400 leading-relaxed">
-              We help eCommerce brands grow profitably with ROI-driven email & SMS marketing. 
+            <p className="text-gray-400 leading-relaxed text-base">
+              We help eCommerce brands grow profitably with ROI-driven email & SMS marketing.
               Built to scale your revenue, not your workload.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className='ml-14'>
-            <h3 className="text-lg font-semibold mb-4 text-green-400">Quick Links</h3>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li><a href="#services" className="hover:text-green-500 transition">Services</a></li>
-              <li><a href="#about" className="hover:text-green-500 transition">About</a></li>
-              <li><a href="#case-studies" className="hover:text-green-500 transition">Case Studies</a></li>
-              <li><a href="#team" className="hover:text-green-500 transition">Team</a></li>
-              <li><Link to="/book-a-call" className="hover:text-green-500 transition">Contact</Link></li>
-            </ul>
+          {/* Quick Links – centered on desktop */}
+          <div className="flex md:justify-center">
+            <div>
+              <h3 className="text-lg font-semibold mb-4 text-green-400">Quick Links</h3>
+              <ul className="space-y-3 text-gray-400 text-sm">
+                <li><a href="#services" className="hover:text-green-500 transition">Services</a></li>
+                <li><a href="#about" className="hover:text-green-500 transition">About</a></li>
+                <li><a href="#case-studies" className="hover:text-green-500 transition">Case Studies</a></li>
+                <li><a href="#team" className="hover:text-green-500 transition">Team</a></li>
+                <li><Link to="/book-a-call" className="hover:text-green-500 transition">Contact</Link></li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact Info */}
@@ -34,19 +36,19 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-400 text-sm">
               <li className="flex items-center">
                 <MapPin className="w-5 h-5 text-green-500 mr-3" />
-                Uzbekistan
+                <span>Uzbekistan</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-green-500 mr-3" />
-                +998 50 072 21 20
+                <span>+998 50 072 21 20</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-green-500 mr-3" />
-                zuxriddinmutalibjonov@gmail.com
+                <span>zuxriddinmutalibjonov@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <Clock className="w-5 h-5 text-green-500 mr-3" />
-                Mon–Fri, 9AM–6PM
+                <span>Mon–Fri, 9AM–6PM</span>
               </li>
             </ul>
           </div>
