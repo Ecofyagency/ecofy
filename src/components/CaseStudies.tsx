@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import exampleBefore from "../images/before.jpeg";
 import exampleAfter from "../images/after.jpeg";
-import case2larger from "../images/largerimage2.jpeg";
+import case2larger from "../images/largerimage.jpeg";
 import case3 from "../images/before3.jpg";
 import case3after from "../images/after3.jpg";
 import case4 from "../images/fourthlarger.png";

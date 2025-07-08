@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* About */}
+
           <div>
             <h2 className="text-2xl font-bold text-green-500 mb-4">Ecofy Agency</h2>
             <p className="text-gray-400 leading-relaxed text-base">
@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links – centered on desktop */}
+
           <div className="flex md:justify-center">
             <div>
               <h3 className="text-lg font-semibold mb-4 text-green-400">Quick Links</h3>
@@ -30,7 +30,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-green-400">Contact</h3>
             <ul className="space-y-4 text-gray-400 text-sm">
@@ -54,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Line */}
+
         <div className="border-t border-gray-800 mt-12 pt-6 text-center">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Ecofy Agency. All rights reserved.

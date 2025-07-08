@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className="relative bg-black text-white min-h-screen px-6 sm:px-10 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-12 overflow-hidden">
       
-      {/* Text Section */}
+
       <div className="z-10 max-w-xl space-y-6 text-center lg:text-left pt-24 lg:pt-0">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
           We make email your <span className="text-green-500">highest-earning</span> channel
@@ -22,7 +22,7 @@ const Hero = () => {
           We handle your email marketing, so you can focus on growing your business.
         </p>
 
-        {/* CTA Buttons */}
+
         <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
           <Link to="/book-a-call">
             <button className="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-lg font-semibold">
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Image Slider */}
+
       <div className="relative w-full lg:w-[50%] h-[420px] overflow-hidden">
         <div className="absolute top-0 left-0 flex w-max gap-6 animate-slide-x h-full">
           {[...heroImages, ...heroImages].map((img, index) => {

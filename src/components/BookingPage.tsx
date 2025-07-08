@@ -34,7 +34,7 @@ const Booking = () => {
       <Navigation theme="light" />
 
       <section className="flex-1 max-w-7xl mx-auto px-6 lg:px-12 pt-14 md:pt-32 pb-8">
-        {/* Header */}
+
         <div className="text-center mb-6 md:mb-12">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 md:mb-8 mt-7">
             Get Your <span className="text-green-600">Free Email Audit</span>
@@ -44,9 +44,9 @@ const Booking = () => {
           </p>
         </div>
 
-        {/* Grid */}
+
         <div className="grid md:grid-cols-[1fr_1.25fr] gap-8 md:gap-16 items-start">
-          {/* Benefits */}
+     
           <div ref={leftRef}>
             <h2 className="text-2xl font-semibold mb-4 mt-0 text-center md:text-left">
               Here’s what you’ll get
@@ -70,7 +70,7 @@ const Booking = () => {
             </div>
           </div>
 
-          {/* Calendly */}
+
           <div className="w-full">
             <div
               className="rounded-xl overflow-hidden border border-gray-300 shadow-md w-full"
@@ -86,7 +86,7 @@ const Booking = () => {
             </div>
           </div>
 
-          {/* CTA Message */}
+ 
           <div className="md:col-span-2 flex justify-center mt-4 md:mt-2">
             <p className="text-center text-green-600 font-semibold text-base max-w-xl">
               Let’s begin your email marketing journey and make the most of your profit from it.

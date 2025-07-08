@@ -1,5 +1,6 @@
 import React from "react";
 import { X, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Comparison = () => {
   const comparisons = [
@@ -16,7 +17,7 @@ const Comparison = () => {
   return (
     <div className="bg-gray-950 pt-6 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
+
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">
             Not Your Average <span className="text-green-400">Agency</span>
@@ -26,7 +27,6 @@ const Comparison = () => {
           </p>
         </div>
 
-        {/* Table */}
         <div className="w-full mb-2">
           <div className="grid grid-cols-3 bg-gray-800 rounded-t-2xl overflow-hidden text-center text-sm sm:text-base">
             <div className="p-4 font-bold text-left sm:text-center text-white">Feature</div>
@@ -60,14 +60,13 @@ const Comparison = () => {
           ))}
         </div>
 
-        {/* CTA */}
         <div className="text-center mt-10">
-          <a
-            href="/book-a-call"
+          <Link
+            to="/book-a-call"
             className="inline-block bg-green-500 hover:bg-green-400 text-black font-bold px-8 py-4 rounded-lg transition duration-300"
           >
             Experience the Difference
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -39,7 +40,7 @@ const FAQ = () => {
   return (
     <div className="bg-gray-50 pt-20 pb-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+
         <div className="text-center mb-14">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
             Frequently Asked <span className="text-green-500">Questions</span>
@@ -49,7 +50,6 @@ const FAQ = () => {
           </p>
         </div>
 
-        {/* FAQs */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
@@ -78,15 +78,14 @@ const FAQ = () => {
           ))}
         </div>
 
-        {/* CTA */}
         <div className="text-center mt-10 mb-4">
           <p className="text-gray-600 mb-3">Still have questions?</p>
-          <a
-            href="/book-a-call"
+          <Link
+            to="/book-a-call"
             className="inline-block bg-green-500 hover:bg-green-600 text-black font-bold px-8 py-4 rounded-lg transition duration-300 transform hover:scale-105"
           >
             Book a Call
-          </a>
+          </Link>
         </div>
       </div>
     </div>

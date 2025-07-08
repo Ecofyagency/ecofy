@@ -28,7 +28,7 @@ const team = [
 const Team = () => {
   return (
     <section id='team' className="bg-black py-20 px-6 sm:px-10 lg:px-20 overflow-hidden">
-      {/* Section Header */}
+    
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Team = () => {
         </p>
       </motion.div>
 
-      {/* Team Grid */}
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {team.map((member, index) => (
           <motion.div

@@ -45,13 +45,13 @@ const Services = () => {
 
   const handleNavigate = () => {
     navigate('/book-a-call');
-    window.scrollTo(0, 0); // Scroll to top on navigation
+    window.scrollTo(0, 0); 
   };
 
   return (
     <section id="services" className="bg-black pt-24 pb-8">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20">
-        {/* Heading */}
+
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-4">
             Our <span className="text-green-500">Services</span>
@@ -61,7 +61,7 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Cards */}
+
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -94,7 +94,7 @@ const Services = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
+
         <div className="mt-10 text-center">
           <button
             onClick={handleNavigate}

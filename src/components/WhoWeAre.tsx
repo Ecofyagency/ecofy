@@ -5,7 +5,7 @@ import about from '../images/about.jpeg';
 const WhoWeAre = () => {
   return (
     <section id='about' className="bg-white py-12 px-6 sm:px-10 lg:px-20 overflow-hidden">
-      {/* Animated Header */}
+
       <motion.div
         className="text-center mb-10"
         initial={{ opacity: 0, y: -40 }}
@@ -20,9 +20,9 @@ const WhoWeAre = () => {
         </p>
       </motion.div>
 
-      {/* Content: Image Left, Text Right on Desktop */}
+
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
-        {/* Image Section */}
+
         <motion.div
           className="w-full lg:w-1/2"
           initial={{ opacity: 0, x: -50 }}
@@ -37,7 +37,6 @@ const WhoWeAre = () => {
           />
         </motion.div>
 
-        {/* Text Section */}
         <motion.div
           className="w-full lg:w-1/2 text-center lg:text-left"
           initial={{ opacity: 0, x: 50 }}
